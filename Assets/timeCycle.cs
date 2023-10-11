@@ -18,8 +18,14 @@ public class timeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeOfDay += Time.deltaTime * orbitSpeed;
-        if(timeOfDay > 24)
+        float tempSpeed = 0f;
+        if(timeOfDay > 2f && timeOfDay < 22f)
+        {
+            tempSpeed = orbitSpeed * 20f;
+        }
+        else{tempSpeed = orbitSpeed;}
+        timeOfDay += Time.deltaTime * tempSpeed;
+        if(timeOfDay > 24f)
         {
             timeOfDay = 0f;
         }
@@ -35,7 +41,7 @@ public class timeCycle : MonoBehaviour
     {
         float alpha = timeOfDay / 24.0f;
         Debug.Log(alpha);
-        float sunRotation = Mathf.Lerp(-90, 270, alpha);
+        float sunRotation = Mathf.Lerp(-15, 195, alpha);
         Debug.Log(sunRotation);
         
         //sun.transform.rotation.eulerAngles.y = sunRotation;

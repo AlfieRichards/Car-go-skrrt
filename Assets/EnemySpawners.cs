@@ -34,7 +34,7 @@ public class EnemySpawners : MonoBehaviour
                 GameObject selectedPrefab = prefabsToSpawn[randomIndex];
 
                 // Instantiate the selected prefab at the chosen spawn point's position and rotation, and make it a child of the parentObject.
-                GameObject spawnedObject = Instantiate(selectedPrefab, spawnPoint.position, spawnPoint.rotation);
+                GameObject spawnedObject = Instantiate(selectedPrefab, spawnPoint.position, Quaternion.identity);
                 spawnedObject.transform.parent = parentObject;
 
                 // Generate a random spawn delay within the specified range.
