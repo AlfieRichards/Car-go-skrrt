@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //false is left true is right
     public bool side = true;
     public bool alive = false;
+    public GameManager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Destroy the player object
             alive = false;
+            manager.Death();
         }
     }
 }

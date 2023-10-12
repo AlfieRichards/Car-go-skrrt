@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuCanvas;
     public GameObject scoreCanvas;
     public GameObject player;
+    public GameObject explosion;
     private float highScore = 0f;
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,12 @@ public class GameManager : MonoBehaviour
             if(!playing)
             {
                 playing = true;
-                playerScript.alive = true;
+                Debug.Log(playing);
                 player.SetActive(true);
+                playerScript.alive = true;
+                menuCanvas.SetActive(false);
+                explosion.SetActive(false);
+                scoreCanvas.SetActive(true);
             }
         }
         if(playing)
@@ -59,18 +64,20 @@ public class GameManager : MonoBehaviour
         if(alive)
         {
             score += 1 * scoreMulti;
-            Debug.Log(score);
+            //Debug.Log(score);
             float displayScore = Mathf.Round(score);
             text.text = "Score: " + displayScore.ToString();
 
             if(score > highScore){highScore = score;}
             highText.text = "High score: " + Mathf.Round(highScore).ToString();
         }
-        else
-        {
-            playing = false;
-            player.SetActive(false);
-            score = 0f;
-        }
+    }
+
+    public void Death()
+    {
+        playing = false;
+        player.SetActive(false);
+        explosion.SetActive(true);
+        score = 0f;
     }
 }
