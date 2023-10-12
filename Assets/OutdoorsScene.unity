@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4.933552, g: 2.827257, b: 1.1803144, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -527,6 +527,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 45
   rotation: 1
+--- !u!1001 &342848991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.89133
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5251579
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.6513603
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.610155
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.61008555
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3573075
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3575443
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 43.306
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -104.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02314abbc9f491c45aac9d10922ecec5,
+        type: 3}
+      propertyPath: m_Name
+      value: truck
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 02314abbc9f491c45aac9d10922ecec5, type: 3}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsToSpawn:
-  - {fileID: 4383720189486875335, guid: 18c07630f10fe894691dfe6fe20ce4e0, type: 3}
   - {fileID: 919132149155446097, guid: 02314abbc9f491c45aac9d10922ecec5, type: 3}
   spawnPoint1: {fileID: 524478760}
   spawnPoint2: {fileID: 830480929}
@@ -1380,3 +1447,4 @@ SceneRoots:
   - {fileID: 432432461}
   - {fileID: 2013410475}
   - {fileID: 1012338192}
+  - {fileID: 342848991}
