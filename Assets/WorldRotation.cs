@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WorldRotation : MonoBehaviour
 {
+    //https://docs.unity3d.com/ScriptReference/Quaternion.html
     public float rotationSpeed  = 45f;
     public bool rotation = true;
     // Start is called before the first frame update

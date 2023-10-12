@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //https://docs.unity3d.com/ScriptReference/Vector3.MoveTowards.html
     public Transform posLeft;
     public Transform posRight;
     public float speed = 1f;
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            // Move our position a step closer to the target.
+            // Move our position a step closer to the target but like the other way.
             Debug.Log("Moving Right");
             var step =  speed * Time.deltaTime; // calculate distance to move
             float newX = Vector3.MoveTowards(transform.position, posRight.position, step).x;

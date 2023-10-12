@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyRotFix : MonoBehaviour
 {
+    //https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
+    //https://docs.unity3d.com/ScriptReference/Vector3.Slerp.html
+    
     public Transform sphere; // Reference to the sphere GameObject
     public float rotationSpeed = 10f;
     public Vector3 rotOffset;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawners : MonoBehaviour
 {
+    //https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html
     public GameObject[] prefabsToSpawn; // An array of prefabs to choose from.
     public Transform spawnPoint1;       // First spawn point.
     public Transform spawnPoint2;       // Second spawn point.
