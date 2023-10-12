@@ -40,9 +40,9 @@ public class timeCycle : MonoBehaviour
     private void Updatetime()
     {
         float alpha = timeOfDay / 24.0f;
-        Debug.Log(alpha);
+        // Debug.Log(alpha);
         float sunRotation = Mathf.Lerp(-15, 195, alpha);
-        Debug.Log(sunRotation);
+        // Debug.Log(sunRotation);
         
         //sun.transform.rotation.eulerAngles.y = sunRotation;
         sun.transform.rotation = Quaternion.Euler(sunRotation, -150f, 0);

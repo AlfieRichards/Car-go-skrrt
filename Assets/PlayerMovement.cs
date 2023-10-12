@@ -11,11 +11,12 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 1f;
     //false is left true is right
     public bool side = true;
+    public bool alive = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        alive = true;
     }
 
     // Update is called once per frame
@@ -60,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Destroy the player object
-            Destroy(gameObject);
+            alive = false;
         }
     }
 }
